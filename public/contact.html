@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - AB Service</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="langue.js"></script>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Logo de AB Service" style="height: 50px;">
+    <h1 id="contact-title">Contactez-nous</h1>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        
+        <a href="about.html">À propos</a>
+        <a href="contact.html">Contact</a>
+
+        <select id="langSelector" onchange="changeLanguage(this.value)">
+            <option value="fr">Français</option>
+            <option value="en">English</option>
+            <option value="ar">العربية</option>
+        </select>
+    </nav>
+</header>
+
+<section class="container">
+
+    <h2>Contactez-moi</h2>
+        
+        <p>Pour toute demande de projet ou de devis, n'hésitez pas à me contacter via les informations ci-dessous :</p>
+        
+        <ul>
+            <li><strong>Email :</strong> <a href="mailto:abdarahmancheriv95@gmail.com">Gmail</a></li>
+            <li><strong>Téléphone :</strong> <a href="tel:+222 31315055">+222 31 31 50 55</a></li>
+            <li><strong>Adresse :</strong> Teverag zeine;Nouakchat;mauritanie</li>
+            <li><strong>Mon Whatessap :</strong> <a href="https://wa.me/31315055" target="_blank">Cliquez ici</a></li>
+        </ul>
+
+    <h2 id="form-title">Ou Envoyez-nous un message</h2>
+    
+    <h5>
+
+    <form action="/contact" method="POST">
+        <input type="text" name="name" placeholder="Votre nom" required><br>
+        <input type="email" name="email" placeholder="Votre e-mail" required><br>
+        <textarea name="message" placeholder="Votre message" required></textarea><br>
+        <button type="submit">Envoyer</button>
+    </form>
+
+    </h5>
+</section>
+
+<footer>
+    <p>By AB Service. Tous droits réservés.</p>
+    <p>&copy; 2024 </p>
+</footer>
+
+</body>
+</html>
